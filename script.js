@@ -1,4 +1,4 @@
-// team member data
+// team member data ------ 1ST TEAM WILL HAVE ALL TYPES OF RICKS FROM RICK AND MORTY
 const teamMembers = [
   {
     name: "Morty",
