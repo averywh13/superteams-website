@@ -32,17 +32,16 @@ const teamMembers = [
   },
   {
     name: 'Cruella De Vil',
-    age: '76',
+    age: '45',
     species: 'Human',
     type: "Heiress",
     status: 'Alive',
     origin: 'France',
-    //change weakness, strengths, and skills for cruella
-    strengths: ['Her necklace', 'Magic potions','Transfiguration'],
-    weaknesses: ['Posion', 'Fire'],
-    skills: ['Practices witchcraft', 'Making contract deals'],
+    strengths: ['Wealth', 'Driving','Intelligence'],
+    weaknesses: ['Reckless driving', 'Unreasonable expectations'],
+    skills: ['Collecting fur coats', 'Smoking', 'Getting her way'],
     biography:
-      'blah blah blah blah',
+      'Cruella De Vil is a fictional character from "The Hundred and One Dalmations". She is depicted as a wealthy, fashion-obsessed heiress with a penchant for fur, particularly Dalmation puppy fur. She is known for her distinctive black and white hair and her pursuit for the puppies.',
       img: "imgs/cruelladevil.png"
   }
 ]
@@ -57,8 +56,8 @@ function generateTeamCards () {
     //style the BGColor of my card based on type
     let backgroundColor
 
-    switch (member.type.toLowerCase()) {
-      case 'queen':
+    switch (member.species.toLowerCase()) {
+      case 'human':
         backgroundColor = 'maroon'
         break
       case 'animal':
