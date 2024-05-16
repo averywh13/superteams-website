@@ -2,47 +2,47 @@
 
 const teamMembers = [
   {
-    name: 'Rick',
-    age: 70,
+    name: 'Queen Grimhilde',
+    age: 50,
     species: 'Human',
-    occupation: 'Scientist',
-    type: "Rick",
-    status: 'Alive',
-    origin: 'Earth (Dimension: C-137)',
-    strengths: 'blah blah blah',
-    weaknesses: 'blah blah blah',
-    skills: ['blah', 'blah', 'blah'],
+    type: "Queen",
+    status: 'Dead',
+    origin: 'Germany',
+    strengths: ['Magic Spell-casting', 'Manipulation'],
+    weaknesses: ['Her reflection', 'Love'],
+    skills: ['Looking into her mirror', 'Being the fairest in the land', 'Seeing the misery of Snow White'],
     biography:
-      'blah blah blah blah'
+      'blah blah blah blah',
+    img: "imgs/"
     
   },
   {
-    name: 'Black Magic Rick',
-    age: 70,
+    name: 'Queen of Hearts',
+    age: 'N/A',
     species: 'Human',
-    occupation: 'Magician',
-    type: "Rick",
-    status: 'Deceased',
-    origin: 'Earth (Dimension: Unknown)',
-    strengths: 'blah blah blah',
-    weaknesses: 'blah blah blah',
-    skills: ['blah', 'blah', 'blah'],
+    type: "Queen",
+    status: 'Alive',
+    origin: 'Wonderland',
+    strengths: ['Manipulation', 'Scheming', 'Cunning'],
+    weaknesses: ['Abuse of power', 'Cruel to animals', 'Loses temper easily'],
+    skills: ['Playing croquet', 'Getting her way', 'Physical strength'],
     biography:
-      'blah blah blah blah'
+      'blah blah blah blah',
+    img: "imgs/"
   },
   {
-    name: 'Wasp Rick',
-    age: 70,
-    species: 'Wasp',
-    occupation: 'Scientist',
-    type: "Rick",
+    name: 'Ursula',
+    age: '76',
+    species: 'Sea Witch',
+    type: "Queen",
     status: 'Alive',
-    origin: 'Earth (Wasp Universe)',
-    strengths: 'blah blah blah',
-    weaknesses: 'blah blah blah',
-    skills: ['blah', 'blah', 'blah'],
+    origin: 'Denmark',
+    strengths: ['Her necklace', 'Magic potions','Transfiguration'],
+    weaknesses: ['Posion', 'Fire'],
+    skills: ['Practices witchcraft', 'Making contract deals'],
     biography:
-      'blah blah blah blah'
+      'blah blah blah blah',
+      img: "imgs/"
   }
 ]
 
@@ -53,14 +53,14 @@ function generateTeamCards () {
     const card = document.createElement('div')
     card.classList.add('col-md-4')
 
-    //style the BGColor of my card based on pos
+    //style the BGColor of my card based on type
     let backgroundColor
 
     switch (member.type.toLowerCase()) {
-      case 'rick':
-        backgroundColor = 'red'
+      case 'queen':
+        backgroundColor = 'maroon'
         break
-      case 'morty':
+      case 'animal':
         backgroundColor = 'green'
         break
       case 'summer':
@@ -72,14 +72,15 @@ function generateTeamCards () {
     
 
     card.innerHTML = `
-            <div class="card">
+            <div class="card divcardborders p-3">
+            <img src="${member.img}" class="card-img-top imgsizing1">
                 <div class = "card-header">
                     ${member.name}
                 </div>
                 <div id="cardBody" class="card-body" style="background-color:${backgroundColor};">
+
                     <p><strong>Age:</strong> ${member.age}</p>
                     <p><strong>Species:</strong> ${member.species}</p>
-                    <p><strong>Occupation:</strong> ${member.occupation}</p>
                     <p><strong>Type:</strong> ${member.type}</p>
                     <p><strong>Status:</strong> ${member.status}</p>
                     <p><strong>Origin:</strong> ${member.origin}</p>
