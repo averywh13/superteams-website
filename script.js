@@ -13,7 +13,7 @@ const teamMembers = [
     skills: ['Looking into her mirror', 'Being the fairest in the land', 'Seeing the misery of Snow White'],
     biography:
       'blah blah blah blah',
-    img: "imgs/"
+    img: "imgs/evilqueen.png"
     
   },
   {
@@ -28,21 +28,22 @@ const teamMembers = [
     skills: ['Playing croquet', 'Getting her way', 'Physical strength'],
     biography:
       'blah blah blah blah',
-    img: "imgs/"
+    img: "imgs/queenofhearts.webp"
   },
   {
-    name: 'Ursula',
+    name: 'Cruella De Vil',
     age: '76',
-    species: 'Sea Witch',
-    type: "Queen",
+    species: 'Human',
+    type: "Heiress",
     status: 'Alive',
-    origin: 'Denmark',
+    origin: 'France',
+    //change weakness, strengths, and skills for cruella
     strengths: ['Her necklace', 'Magic potions','Transfiguration'],
     weaknesses: ['Posion', 'Fire'],
     skills: ['Practices witchcraft', 'Making contract deals'],
     biography:
       'blah blah blah blah',
-      img: "imgs/"
+      img: "imgs/cruelladevil.png"
   }
 ]
 
