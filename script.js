@@ -1,4 +1,4 @@
-// create a team of types of ricks
+// create a team of types of queens
 
 const teamMembers = [
   {
@@ -12,7 +12,7 @@ const teamMembers = [
     weaknesses: ['Her reflection', 'Love'],
     skills: ['Looking into her mirror', 'Being the fairest in the land', 'Seeing the misery of Snow White'],
     biography:
-      'blah blah blah blah',
+      'Queen Grimhilde, more commonly known across popular media as simply The Evil Queen or just The Queen, is the main antagonist of the Disney full-length animated feature film Snow White and the Seven Dwarfs, which is based on the 1812 German fairytale Snow White by the Brothers Grimm.',
     img: "imgs/evilqueen.png"
     
   },
@@ -27,7 +27,7 @@ const teamMembers = [
     weaknesses: ['Abuse of power', 'Cruel to animals', 'Loses temper easily'],
     skills: ['Playing croquet', 'Getting her way', 'Physical strength'],
     biography:
-      'blah blah blah blah',
+      'The Queen of Hearts is an obese woman with fair skin and black hair. She wears a gold crown and earrings, a red headband, and a black and red gown with black and yellow stripes at the bottom.',
     img: "imgs/queenofhearts.webp"
   },
   {
@@ -43,6 +43,48 @@ const teamMembers = [
     biography:
       'Cruella De Vil is a fictional character from "The Hundred and One Dalmations". She is depicted as a wealthy, fashion-obsessed heiress with a penchant for fur, particularly Dalmation puppy fur. She is known for her distinctive black and white hair and her pursuit for the puppies.',
       img: "imgs/cruelladevil.png"
+  },
+  {
+    name: 'Scar',
+    age: '52',
+    species: 'Animal',
+    type: "Prince",
+    status: 'Dead',
+    origin: 'Africa',
+    strengths: ['Psychological manipulation', 'Cunning','brute strength'],
+    weaknesses: ['Mass murderer', 'Power abuser', 'Terrorism'],
+    skills: ['Hunting', 'Being alone'],
+    biography:
+      'Askari, better known as Scar, is the main antagonist in the Disney film The Lion King and franchise. He is the younger and envious brother of Mufasa as well as his arch-rival, and the arch-nemesis of his nephew, Simba',
+      img: "imgs/scarlion.png"
+  },
+  {
+    name: 'Bellwhether',
+    age: '34',
+    species: 'Animal',
+    type: "Assistant Mayor",
+    status: 'Alive',
+    origin: 'Zootopia',
+    strengths: ['High intelligence', 'Manipulation','Politically powerful'],
+    weaknesses: ['Abuses power', 'Terrorism','Incrimination'],
+    skills: ['Brainwashing', 'Terrorizing Zootopia', 'Ruling with an iron fist'],
+    biography:
+      'Dawn Bellwether, formerly known as Assistant Mayor Bellwether and Mayor Bellwether, is the main antagonist in the Disney 55th full-length animated feature film Zootopia. She was the seemingly sweet and compassionate assistant mayor, eventually turned mayor until she was revealed to be a powerful and manipulative criminal mastermind who attempted to create a new order where prey animals dominate the predators.',
+      img: "imgs/bellwhether.webp"
+  },
+  {
+    name: 'Honest John',
+    age: 'N/A',
+    species: 'Animal',
+    type: "Fox",
+    status: 'Alive',
+    origin: 'Italy',
+    strengths: ['Cleverness', 'Deception','Trickery'],
+    weaknesses: ['Stalker', 'Kidnapper', 'Robber'],
+    skills: ['Smoking', 'Drinking', 'Con artist'],
+    biography:
+      'Honest John Worthington Foulfellow, also simply better known as Honest John, is one of the main antagonists in the Disney 2nd full-length animated feature film Pinocchio, which is based on the 1883 Italian novel The Adventures of Pinocchio.',
+      img: "imgs/honestjohn.webp"
   }
 ]
 
@@ -63,11 +105,6 @@ function generateTeamCards () {
       case 'animal':
         backgroundColor = 'green'
         break
-      case 'summer':
-        backgroundColor = 'blue'
-        break
-      default:
-        backgroundColor = 'gray'
     }
     
 
